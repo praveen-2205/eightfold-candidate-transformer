@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Messy Person",
+    "primary_email": "messy@z.com",
+    "phone": null,
+    "skills": null,
+    "current_title": null,
+    "overall_confidence": 0.378
+  },
+  {
+    "name": "John Smith",
+    "primary_email": "john@y.com",
+    "phone": "+12125559999",
+    "skills": null,
+    "current_title": null,
+    "overall_confidence": 0.513
+  },
+  {
+    "name": "Jane Doe",
+    "primary_email": "jane@x.com",
+    "phone": "+14155550123",
+    "skills": [
+      "React",
+      "Python"
+    ],
+    "current_title": "Senior Engineer",
+    "overall_confidence": 0.7024050000000001
+  }
+]
