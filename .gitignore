@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+*.egg-info/
+outputs/
+.pytest_cache/
+# Do not ignore cache/llm/
