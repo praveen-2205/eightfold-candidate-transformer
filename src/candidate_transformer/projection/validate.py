@@ -3,7 +3,9 @@ from candidate_transformer.models.config import OutputConfig
 class SchemaValidationError(Exception):
     pass
 
-def _check_type(value: any, expected_type: str) -> bool:
+from typing import Any
+
+def _check_type(value: Any, expected_type: str) -> bool:
     if expected_type == "string":
         return isinstance(value, str)
     elif expected_type == "string[]":

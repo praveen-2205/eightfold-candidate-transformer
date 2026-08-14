@@ -81,7 +81,7 @@ def _apply_normalization(value: Any, norm_type: str) -> Any:
     return value
 
 def project(profile: CanonicalProfile, config: OutputConfig) -> dict:
-    output = {}
+    output: dict[str, Any] = {}
     dump = profile.model_dump()
     
     for spec in config.fields:

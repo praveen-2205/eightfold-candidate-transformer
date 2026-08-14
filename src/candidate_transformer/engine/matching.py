@@ -107,7 +107,7 @@ def cluster_records(records: list[SourceRecord]) -> list[Cluster]:
     # Blocking: bucket records by cheap keys to avoid O(n^2) scaling issues
     buckets = defaultdict(list)
     for r in sorted_records:
-        keys = set()
+        keys: set[str] = set()
         keys.update(f"email:{v}" for v in _get_values(r, "emails"))
         keys.update(f"phone:{v}" for v in _get_values(r, "phones"))
         keys.update(f"gh:{v}" for v in _get_values(r, "links.github"))

@@ -23,7 +23,7 @@ def _generate_id(resolved: dict) -> str:
         
     return "c_" + hashlib.sha1(key.encode('utf-8')).hexdigest()[:10]
 
-def _parse_month(ym_str: str) -> int | None:
+def _parse_month(ym_str: str | None) -> int | None:
     if not ym_str:
         return None
     if ym_str.lower() == "present":

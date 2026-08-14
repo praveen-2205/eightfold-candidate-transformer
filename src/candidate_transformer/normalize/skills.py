@@ -25,7 +25,7 @@ def canonical_skill(raw: str) -> str | None:
     
     # 1. Exact alias hit
     if query in _SKILL_MAP:
-        return _SKILL_MAP[query]
+        return _SKILL_MAP[query]  # type: ignore
         
     # 2. Fuzzy match against canonicals
     if _KNOWN_CANONICAL:
@@ -35,7 +35,7 @@ def canonical_skill(raw: str) -> str | None:
             scorer=fuzz.WRatio
         )
         if best_match and best_match[1] >= 92:
-            return best_match[0]
+            return best_match[0]  # type: ignore
             
     # 3. Fallback: preserve cleaned title-cased
     return cleaned.title()

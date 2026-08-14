@@ -19,7 +19,7 @@ def to_year_month(raw: str) -> str | None:
 
     try:
         dt = parser.parse(cleaned, default=None)
-        return dt.strftime("%Y-%m")
+        return dt.strftime("%Y-%m")  # type: ignore
     except (ValueError, TypeError, OverflowError):
         return None
 
@@ -35,6 +35,6 @@ def to_year(raw: str) -> int | None:
         
     try:
         dt = parser.parse(cleaned, default=None)
-        return dt.year
+        return dt.year  # type: ignore
     except (ValueError, TypeError, OverflowError):
         return None

@@ -53,8 +53,8 @@ def extract_contacts(text: str, source_id: str) -> list[FieldValue]:
             ))
             
     # 3. Phones (using phonenumbers Matcher for robustness)
-    for match in phonenumbers.PhoneNumberMatcher(text, "US"):
-        raw_phone = match.raw_string
+    for phone_match in phonenumbers.PhoneNumberMatcher(text, "US"):
+        raw_phone = phone_match.raw_string
         norm_phone = to_e164(raw_phone)
         if norm_phone:
             fields.append(FieldValue(

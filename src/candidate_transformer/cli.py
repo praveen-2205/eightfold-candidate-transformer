@@ -1,6 +1,7 @@
 import argparse
 import json
 import sys
+from typing import Any
 from candidate_transformer import __version__
 from candidate_transformer.pipeline import run
 from candidate_transformer.projection import load_config, project, validate_output
@@ -53,7 +54,7 @@ def main(argv: list[str] | None = None) -> int:
 
     # Output formatting
     if len(output_data) == 1:
-        final_json = output_data[0]
+        final_json: Any = output_data[0]
     else:
         final_json = output_data
 
