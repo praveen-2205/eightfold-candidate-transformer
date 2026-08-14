@@ -6,7 +6,7 @@ from candidate_transformer.engine.confidence import calculate_confidence
 def test_edge_case_conflicting_title_picks_csv(tmp_path):
     # Create a CSV where Jane is a "Chief Engineer"
     csv_path = tmp_path / "rec.csv"
-    csv_path.write_text("name,email,phone,current_company,title\nJane Doe,jane@x.com,,Acme,Chief Engineer", encoding="utf-8")
+    csv_path.write_text("name,email,phone,latest_company,title\nJane Doe,jane@x.com,,Acme,Chief Engineer", encoding="utf-8")
     
     # Our stub resume extractor hardcodes Jane's experience as "Senior Engineer"
     profiles = run([str(csv_path), "sample_data/resume_jane_doe.pdf"], use_llm=False)

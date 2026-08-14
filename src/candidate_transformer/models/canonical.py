@@ -33,6 +33,8 @@ class Provenance(BaseModel):
     field: str
     source: str
     method: str
+    value: str | None = None
+    is_conflict: bool = False
 
 class CanonicalProfile(BaseModel):
     candidate_id: str

@@ -21,11 +21,11 @@ def test_pair_score_logic():
     score, _ = pair_score(r3, r4)
     assert score < 0.80
 
-    # Phone match + Exact name match but no company (0.60 + 0.10 = 0.70 < 0.80 threshold)
+    # Phone match + Exact name match but no company (0.70 + 0.10 = 0.80 >= threshold -> merges)
     r5 = make_rec("5", {"full_name": "Jane Doe", "phones": "+14155550123"})
     r6 = make_rec("6", {"full_name": "Jane Doe", "phones": "+14155550123", "emails": "diff@x.com"})
     score, _ = pair_score(r5, r6)
-    assert score == 0.70
+    assert score == 0.80
 
 def test_cluster_records():
     fv1 = FieldValue(field="emails", value="jane@x.com", source="csv", method="csv")

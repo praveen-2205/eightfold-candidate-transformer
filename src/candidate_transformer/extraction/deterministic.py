@@ -3,6 +3,48 @@ import phonenumbers
 from candidate_transformer.models import FieldValue
 from candidate_transformer.normalize import to_e164, normalize_email
 
+def classify_url(raw_url: str, source_id: str, method: str = "resume_regex", conf: float = 0.85) -> FieldValue | None:
+    # EXPLICITLY PREVENT EMAILS FROM BEING PARSED AS URLS
+    if '@' in raw_url:
+        return None
+        
+    url_lower = raw_url.lower()
+    
+    # Explicitly reject non-web schemes
+    if url_lower.startswith("tel:") or url_lower.startswith("mailto:"):
+        return None
+    
+    # Explicitly reject common email domains from being treated as bare URLs
+    if url_lower in ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"]:
+        return None
+        
+    if "linkedin.com" in url_lower:
+        field_name = "links.linkedin"
+        # Normalize LinkedIn profile URL to remove extra paths
+        m = re.search(r'(linkedin\.com/in/[^/?#]+)', raw_url, re.IGNORECASE)
+        if m:
+            scheme = "https://www." if "www." in url_lower else "https://"
+            if url_lower.startswith("http://") and "www." not in url_lower: scheme = "http://"
+            if url_lower.startswith("http://www."): scheme = "http://www."
+            raw_url = scheme + m.group(1)
+    elif "github.com" in url_lower:
+        # Distinguish between profile (1 slash) and repo (multiple slashes)
+        path = url_lower.split("github.com/")[-1].strip("/")
+        if "/" in path:
+            field_name = "links.other"
+        else:
+            field_name = "links.github"
+    elif "scholar.google.com" in url_lower:
+        field_name = "links.other"
+    else:
+        field_name = "links.portfolio"
+        
+    return FieldValue(
+        field=field_name, value=raw_url, 
+        source=source_id, method=method, 
+        raw=raw_url, extraction_confidence=conf
+    )
+
 def extract_contacts(text: str | None, source_id: str) -> list[FieldValue]:
     if not text:
         return []
@@ -49,35 +91,8 @@ def extract_contacts(text: str | None, source_id: str) -> list[FieldValue]:
     url_pattern = r'(https?://[^\s]+|www\.[^\s]+|[a-zA-Z0-9-]+\.(com|org|net|io|me|dev)[^\s]*)'
     for match in re.finditer(url_pattern, text):
         raw_url = match.group(0).rstrip('.,;)')
-        
-        # EXPLICITLY PREVENT EMAILS FROM BEING PARSED AS URLS
-        if '@' in raw_url:
-            continue
-            
-        url_lower = raw_url.lower()
-        
-        # Explicitly reject common email domains from being treated as bare URLs
-        if url_lower in ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"]:
-            continue
-            
-        if "linkedin.com" in url_lower:
-            field_name = "links.linkedin"
-        elif "github.com" in url_lower:
-            # Distinguish between profile (1 slash) and repo (multiple slashes)
-            path = url_lower.split("github.com/")[-1].strip("/")
-            if "/" in path:
-                field_name = "links.other"
-            else:
-                field_name = "links.github"
-        elif "scholar.google.com" in url_lower:
-            field_name = "links.other"
-        else:
-            field_name = "links.portfolio"
-            
-        fields.append(FieldValue(
-            field=field_name, value=raw_url, 
-            source=source_id, method="resume_regex", 
-            raw=raw_url, extraction_confidence=0.85
-        ))
+        fv = classify_url(raw_url, source_id)
+        if fv:
+            fields.append(fv)
         
     return fields

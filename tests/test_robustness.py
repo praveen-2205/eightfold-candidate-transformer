@@ -20,7 +20,7 @@ def test_garbage_binary_source_tolerated(tmp_path):
 def test_invalid_values_become_null(tmp_path):
     # Create a CSV with a bad phone number
     csv_file = tmp_path / "bad_data.csv"
-    csv_file.write_text("name,email,phone,current_company,title\nBad Phone,bp@x.com,not_a_phone,Acme,Dev", encoding="utf-8")
+    csv_file.write_text("name,email,phone,latest_company,title\nBad Phone,bp@x.com,not_a_phone,Acme,Dev", encoding="utf-8")
     
     profiles = run([str(csv_file)], use_llm=False)
     assert len(profiles) == 1

@@ -1,5 +1,5 @@
 from candidate_transformer.models import Provenance
-from candidate_transformer.engine.conflict import ResolvedField
+from candidate_transformer.engine.conflict import ResolvedField, _dates_overlap, _normalize_name
 
 def _val_key(v) -> str:
     if isinstance(v, dict):
@@ -21,7 +21,29 @@ def build_provenance(resolved: dict[str, ResolvedField]) -> list[Provenance]:
                 method=winner.method
             ))
             
-            # 2. Record any corroborating sources (multiple agreeing)
+            # 2. Record conflicts for dictionary fields like experience
+            if field_name in {"experience", "education"} and isinstance(winner.value, dict):
+                w_key = _normalize_name(winner.value.get("company") or winner.value.get("institution") or "")
+                
+                for loser in resolved_field.losers:
+                    if not isinstance(loser.value, dict):
+                        continue
+                    l_key = _normalize_name(loser.value.get("company") or loser.value.get("institution") or "")
+                    
+                    if l_key == w_key and _dates_overlap(winner.value, loser.value):
+                        # They belong to the same cluster. Find field-level conflicts.
+                        for k, l_val in loser.value.items():
+                            w_val = winner.value.get(k)
+                            if l_val and w_val and l_val != w_val:
+                                prov_list.append(Provenance(
+                                    field=f"{field_name}.{k}",
+                                    source=loser.source,
+                                    method=loser.method,
+                                    value=str(l_val),
+                                    is_conflict=True
+                                ))
+                        
+            # 3. Record any corroborating sources (multiple agreeing)
             win_key = _val_key(winner.value)
             for loser in resolved_field.losers:
                 if _val_key(loser.value) == win_key:

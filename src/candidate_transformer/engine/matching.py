@@ -49,16 +49,16 @@ def pair_score(a: SourceRecord, b: SourceRecord) -> tuple[float, list[str]]:
             score += 0.80
             explanations.append(f"{url_field.split('.')[-1]}_match")
 
-    # 3. Phones (+0.60)
+    # 3. Phones (+0.70)
     if _get_values(a, "phones") & _get_values(b, "phones"):
-        score += 0.60
+        score += 0.70
         explanations.append("phone_match")
 
     # 4. Name + Company Signals
     name_sim = _get_name_similarity(a, b)
     if name_sim >= 0.90:
         def extract_companies(rec: SourceRecord) -> set[str]:
-            comps = _get_values(rec, "current_company")
+            comps = _get_values(rec, "latest_company")
             for f in rec.fields:
                 if f.field == "experience" and isinstance(f.value, dict) and f.value.get("company"):
                     comps.add(f.value["company"])
@@ -74,7 +74,7 @@ def pair_score(a: SourceRecord, b: SourceRecord) -> tuple[float, list[str]]:
             score += 0.10
             explanations.append(f"name_only_match")
 
-    return min(score, 1.0), explanations
+    return min(round(score, 2), 1.0), explanations
 
 def cluster_records(records: list[SourceRecord]) -> list[Cluster]:
     if not records:

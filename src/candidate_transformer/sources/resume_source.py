@@ -1,7 +1,7 @@
 import os
 import pypdf
 from candidate_transformer.models import SourceRecord
-from candidate_transformer.extraction.deterministic import extract_contacts
+from candidate_transformer.extraction.deterministic import extract_contacts, classify_url
 from candidate_transformer.extraction.semantic import get_extractor
 from candidate_transformer.util.logging import get_logger
 
@@ -18,6 +18,7 @@ class ResumeSource:
             
         source_id = f"resume:{os.path.basename(filepath)}"
         text_chunks = []
+        fields_from_annots = []
         
         try:
             with open(filepath, "rb") as f:
@@ -38,8 +39,10 @@ class ResumeSource:
                                 if action and action.get("/S") == "/URI":
                                     uri = action.get("/URI")
                                     if uri:
-                                        # Append the hidden URL so the regex engine can find it
-                                        text_chunks.append(str(uri))
+                                        # Parse the hidden URL directly with higher reliability
+                                        fv = classify_url(str(uri), source_id, method="resume_annotation", conf=0.90)
+                                        if fv:
+                                            fields_from_annots.append(fv)
                                         
         except Exception as e:
             logger.error(f"Failed to read PDF {filepath}: {e}")
@@ -49,6 +52,7 @@ class ResumeSource:
         
         # Extract fields using the newly aggregated text (visible prose + hidden links)
         fields = extract_contacts(full_text, source_id)
+        fields.extend(fields_from_annots)
         fields.extend(self.semantic_extractor.extract(full_text, source_id))
         
         return [SourceRecord(source_id=source_id, source_type="resume", fields=fields)]

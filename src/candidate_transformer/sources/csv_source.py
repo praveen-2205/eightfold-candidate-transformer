@@ -54,14 +54,14 @@ class CsvSource:
                                 ))
                                 
                         # 4. Experience (Company & Title formatted directly for canonical merging)
-                        if row.get("current_company") or row.get("title"):
-                            company = row.get("current_company", "").strip() or None
+                        if row.get("latest_company") or row.get("title"):
+                            company = row.get("latest_company", "").strip() or None
                             title = row.get("title", "").strip() or None
                             fields.append(FieldValue(
                                 field="experience", 
-                                value={"company": company, "title": title, "start": None, "end": "present", "summary": None},
+                                value={"company": company, "title": title, "start": None, "end": None, "summary": None},
                                 source=self.source_type, method="csv_field",
-                                raw={"current_company": company, "title": title}, extraction_confidence=0.9
+                                raw={"latest_company": company, "title": title}, extraction_confidence=0.9
                             ))
                             
                         records.append(SourceRecord(

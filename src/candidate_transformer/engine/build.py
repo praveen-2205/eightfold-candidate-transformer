@@ -17,7 +17,17 @@ def _generate_id(resolved: dict) -> str:
         key = f"phone:{resolved['phones'].winners[0].value}"
     elif resolved.get("full_name") and resolved["full_name"].winners:
         w = resolved["full_name"].winners[0]
-        key = f"name:{w.value}:{w.source}"
+        comps = set()
+        titles = set()
+        if "experience" in resolved:
+            for exp in resolved["experience"].winners:
+                if isinstance(exp.value, dict):
+                    c = exp.value.get("company")
+                    t = exp.value.get("title")
+                    if c: comps.add(c.lower())
+                    if t: titles.add(t.lower())
+        sig = "|".join(sorted(comps)) + "||" + "|".join(sorted(titles))
+        key = f"name:{w.value}:{sig}:{w.source}"
     else:
         key = "unknown"
         

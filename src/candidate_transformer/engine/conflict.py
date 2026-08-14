@@ -1,3 +1,4 @@
+import re
 from dataclasses import dataclass
 from collections import defaultdict
 from typing import Any
@@ -16,6 +17,7 @@ SOURCE_RELIABILITY = {
 # Base method reliability extraction
 def _get_method_reliability(method: str) -> float:
     if "csv_field" in method: return 0.90
+    if "resume_annotation" in method: return 0.88
     if "normalized" in method or "resume_regex" in method: return 0.85
     if "derived" in method: return 0.70
     if "resume_llm" in method: return 0.60
@@ -48,6 +50,45 @@ def _score_candidate(fv: FieldValue, all_candidates: list[FieldValue]) -> tuple:
     
     return (source_rel, method_rel, corrob, fv.source, lexical)
 
+def _normalize_name(name: str) -> str:
+    if not name:
+        return ""
+    name = name.lower()
+    # Strip parentheticals
+    name = re.sub(r'\(.*?\)', '', name)
+    # Strip common suffixes at the end
+    suffixes = [r'\binc\.?', r'\bllc\.?', r'\bpvt\.?', r'\bltd\.?', r'\bcorp\.?', r'\bcorporation\b', r'\bco\.?']
+    for suffix in suffixes:
+        name = re.sub(suffix + r'$', '', name).strip()
+        name = re.sub(r'[,.\s]+$', '', name)
+    # Collapse spaces
+    name = re.sub(r'\s+', ' ', name)
+    return name.strip()
+
+def _parse_date(d: str | None, is_end: bool) -> str:
+    if not d or d.lower() == "present":
+        return "9999-99" if is_end else "0000-00"
+    if len(d) == 4 and d.isdigit():
+        return f"{d}-12" if is_end else f"{d}-01"
+    return str(d)
+
+def _dates_overlap(item1: dict, item2: dict) -> bool:
+    if "end_year" in item1 or "end_year" in item2:
+        y1 = str(item1.get("end_year") or "")
+        y2 = str(item2.get("end_year") or "")
+        if not y1 or not y2: return True
+        return y1 == y2
+        
+    if not (item1.get("start") or item1.get("end")): return True
+    if not (item2.get("start") or item2.get("end")): return True
+    
+    start1 = _parse_date(item1.get("start"), False)
+    end1 = _parse_date(item1.get("end"), True)
+    start2 = _parse_date(item2.get("start"), False)
+    end2 = _parse_date(item2.get("end"), True)
+    
+    return start1 <= end2 and start2 <= end1
+
 def resolve_field(field_name: str, candidates: list[FieldValue]) -> ResolvedField:
     if not candidates:
         return ResolvedField(winners=[], losers=[])
@@ -78,8 +119,6 @@ def resolve_field(field_name: str, candidates: list[FieldValue]) -> ResolvedFiel
         return ResolvedField(winners=winners, losers=losers)
         
     elif field_name in {"experience", "education"}:
-        # Specialized array merge by keys (company/institution)
-        seen_keys = set()
         winners = []
         losers = []
         
@@ -88,12 +127,34 @@ def resolve_field(field_name: str, candidates: list[FieldValue]) -> ResolvedFiel
         for c in sorted_cands:
             if not isinstance(c.value, dict):
                 continue
-            key = (c.value.get("company") or c.value.get("institution") or "").lower()
-            if key and key not in seen_keys:
-                seen_keys.add(key)
-                winners.append(c)
-            else:
+            key = _normalize_name(c.value.get("company") or c.value.get("institution") or "")
+            if not key:
+                continue
+                
+            overlapping_winner = None
+            for w in winners:
+                w_key = _normalize_name(w.value.get("company") or w.value.get("institution") or "")
+                if w_key == key and _dates_overlap(w.value, c.value):
+                    overlapping_winner = w
+                    break
+            
+            if overlapping_winner:
+                for k, v in c.value.items():
+                    if not overlapping_winner.value.get(k) and v:
+                        overlapping_winner.value[k] = v
                 losers.append(c)
+            else:
+                merged_val = c.value.copy()
+                new_fv = FieldValue(
+                    field=c.field,
+                    value=merged_val,
+                    source=c.source,
+                    method=c.method,
+                    raw=c.raw,
+                    extraction_confidence=c.extraction_confidence
+                )
+                winners.append(new_fv)
+                
         return ResolvedField(winners=winners, losers=losers)
 
     else:

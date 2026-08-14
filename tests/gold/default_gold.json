@@ -25,7 +25,7 @@
         "company": "Gamma Inc",
         "title": null,
         "start": null,
-        "end": "present",
+        "end": null,
         "summary": null
       }
     ],
@@ -35,17 +35,23 @@
       {
         "field": "emails",
         "source": "recruiter_csv",
-        "method": "csv_field+normalized:email"
+        "method": "csv_field+normalized:email",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "experience",
         "source": "recruiter_csv",
-        "method": "csv_field"
+        "method": "csv_field",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "full_name",
         "source": "recruiter_csv",
-        "method": "csv_field"
+        "method": "csv_field",
+        "value": null,
+        "is_conflict": false
       }
     ]
   },
@@ -77,7 +83,7 @@
         "company": "Beta LLC",
         "title": "Data Analyst",
         "start": null,
-        "end": "present",
+        "end": null,
         "summary": null
       }
     ],
@@ -87,22 +93,30 @@
       {
         "field": "emails",
         "source": "recruiter_csv",
-        "method": "csv_field+normalized:email"
+        "method": "csv_field+normalized:email",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "experience",
         "source": "recruiter_csv",
-        "method": "csv_field"
+        "method": "csv_field",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "full_name",
         "source": "recruiter_csv",
-        "method": "csv_field"
+        "method": "csv_field",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "phones",
         "source": "recruiter_csv",
-        "method": "csv_field+normalized:E164"
+        "method": "csv_field+normalized:E164",
+        "value": null,
+        "is_conflict": false
       }
     ]
   },
@@ -146,80 +160,104 @@
       {
         "company": "Acme Corp",
         "title": "Software Engineer",
-        "start": null,
-        "end": "present",
-        "summary": null
-      },
-      {
-        "company": "Acme",
-        "title": "Senior Engineer",
         "start": "2021-01",
         "end": "present",
         "summary": null
       }
     ],
     "education": null,
-    "overall_confidence": 0.627615,
+    "overall_confidence": 0.474615,
     "provenance": [
       {
         "field": "emails",
         "source": "recruiter_csv",
-        "method": "csv_field+normalized:email"
+        "method": "csv_field+normalized:email",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "emails",
         "source": "resume:resume_jane_doe.pdf",
-        "method": "resume_regex"
+        "method": "resume_regex",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "experience",
         "source": "recruiter_csv",
-        "method": "csv_field"
+        "method": "csv_field",
+        "value": null,
+        "is_conflict": false
       },
       {
-        "field": "experience",
+        "field": "experience.company",
         "source": "resume:resume_jane_doe.pdf",
-        "method": "resume_llm"
+        "method": "resume_llm",
+        "value": "Acme",
+        "is_conflict": true
+      },
+      {
+        "field": "experience.title",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_llm",
+        "value": "Senior Engineer",
+        "is_conflict": true
       },
       {
         "field": "full_name",
         "source": "recruiter_csv",
-        "method": "csv_field"
+        "method": "csv_field",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "full_name",
         "source": "resume:resume_jane_doe.pdf",
-        "method": "resume_regex"
+        "method": "resume_regex",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "links.github",
         "source": "resume:resume_jane_doe.pdf",
-        "method": "resume_regex"
+        "method": "resume_regex",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "links.linkedin",
         "source": "resume:resume_jane_doe.pdf",
-        "method": "resume_regex"
+        "method": "resume_regex",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "links.portfolio",
         "source": "resume:resume_jane_doe.pdf",
-        "method": "resume_regex"
+        "method": "resume_regex",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "skills",
         "source": "resume:resume_jane_doe.pdf",
-        "method": "resume_llm+normalized:canonical"
+        "method": "resume_llm+normalized:canonical",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "skills",
         "source": "resume:resume_jane_doe.pdf",
-        "method": "resume_llm+normalized:canonical"
+        "method": "resume_llm+normalized:canonical",
+        "value": null,
+        "is_conflict": false
       },
       {
         "field": "years_experience",
         "source": "system",
-        "method": "derived:from_experience_dates"
+        "method": "derived:from_experience_dates",
+        "value": null,
+        "is_conflict": false
       }
     ]
   }
