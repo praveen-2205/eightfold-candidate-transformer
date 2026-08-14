@@ -1,84 +1,137 @@
-# Eightfold Candidate Transformer
+# Eightfold Multi-Source Candidate Data Transformer
 
-A robust, multi-source data pipeline that ingests messy, unstructured (PDF/TXT resumes) and structured (CSV) recruiter data to produce highly confident, deterministic, and canonically merged candidate profiles.
+## 1. Project Overview
+This project is a robust data transformer designed to ingest noisy candidate information from diverse, conflicting sources. It normalizes fields, deterministically merges identical candidates, resolves field-level conflicts, and outputs a clean, canonical JSON profile with configurable schemas. Currently, the pipeline fully implements and extracts from **Recruiter CSV exports** (structured) and **Resume PDF files** (unstructured).
 
-## Architecture & Design Philosophy
+## 2. Architecture / Pipeline Summary
+The system strictly separates internal canonical generation from external schema projection:
+- **Detect & Extract**: Parses Recruiter CSV rows and parses Resume PDFs (using hybrid LLM/Regex).
+- **Normalize**: Standardizes critical identity signals early (e.g., stripping emails, enforcing E.164 for phones).
+- **Merge (Cluster)**: Deterministically groups records into candidates using a threshold-based identity scoring system.
+- **Conflict Resolution**: Resolves intra-candidate conflicting values by deferring to a strict source-reliability hierarchy.
+- **Confidence & Provenance**: Computes mathematical confidence scores and tracks the exact source origin (and discarded conflicts) for every field.
+- **Project & Validate**: Reshapes the canonical internal profile into the requested JSON schema via a dynamic runtime config.
 
-This pipeline employs a **Hybrid Extraction Strategy** designed to eliminate LLM hallucinations and enforce deterministic, testable outputs:
+## 3. Prerequisites
+- **Python:** 3.11+
+- **Packages:** Defined in `requirements.txt` / `pyproject.toml` (e.g., pydantic, pypdf, phonenumbers, pycountry).
 
-1. **Deterministic First:** Phones, emails, links, and structured CSV fields are extracted using strict regular expressions and heuristics.
-2. **Boxed LLM Semantic Extraction:** We only use LLMs for inherently semantic fields (skills, experience summaries). The LLM output is strictly validated against a Pydantic schema, mapped back to deterministic enums/canonicals, and cached.
-3. **Graph-Based Matching:** Candidate deduplication utilizes a Union-Find (Disjoint Set) algorithm with a deterministic scoring threshold. It employs blocking (grouping by emails, phones, or last name initials) to scale efficiently and avoid O(N²) comparisons.
-4. **Weighted Conflict Resolution:** When sources disagree, the engine picks the winner based on source reliability (e.g., CSV > Resume) and extraction method (e.g., Regex > LLM).
-5. **Noisy-OR Confidence & Provenance:** Corroborating sources boost a field's confidence using a noisy-OR calculation. Every emitted field includes a transparent audit trail (`provenance`) detailing exactly which source and method produced it.
-6. **Configurable Projection Layer:** The core engine is decoupled from the output schema. A JSON-driven projection layer dynamically reshapes the profile, handling missing-value policies and array indexing on the fly.
-
-## Project Structure
-
-```text
-src/candidate_transformer/
-├── engine/         # Matching, Conflict Resolution, Confidence, Provenance
-├── extraction/     # PDF parsing, Regex rules, and LLM semantic extraction
-├── models/         # Pydantic schemas (SourceRecord, CanonicalProfile, Config)
-├── normalize/      # Deterministic standardizers (E.164, ISO Countries, Canonical Skills)
-├── projection/     # Dynamic output formatting & JSON schema validation
-├── sources/        # Input adapters (CsvSource, ResumeSource)
-├── cli.py          # Command-line interface
-└── pipeline.py     # Main engine orchestration
-```
-
-## Setup Instructions
-
-This project requires Python 3.10+.
-
-### 1. Install dependencies
-
+## 4. Installation
 ```bash
+git clone <repo-url>
+cd eightfold-candidate-transformer
+python -m venv .venv
+# On Windows:
+.venv\Scripts\activate
+# On Linux/macOS:
+# source .venv/bin/activate
 pip install -r requirements.txt
-```
-
-### 2. Install the package locally (optional but recommended)
-
-```bash
 pip install -e .
 ```
 
-## Usage
+## 5. API Key Setup — NVIDIA NIM (Llama 3.1 70B Instruct)
+Unstructured extraction for Resume PDFs relies on the hosted NVIDIA NIM endpoint for `meta/llama-3.1-70b-instruct` to perform high-accuracy semantic entity extraction.
 
-Use the CLI to process candidate data. You can chain as many `--input` flags as needed.
+1. Go to [NVIDIA NIM Llama 3.1 70B Instruct](https://build.nvidia.com/meta/llama-3_1-70b-instruct?nim=hosted)
+2. Sign in or create a free NVIDIA developer account.
+3. Click **"Get API Key"** on the model page.
+4. Copy the generated key (it starts with `nvapi-...`).
+5. Set it as an environment variable or add it to a `.env` file at the root of the repository:
+   ```bash
+   NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxxxxxx
+   ```
+*(Note: Do not commit your `.env` file to version control. The free tier may have rate limits depending on usage volume).*
 
-### Basic Run (Offline/Deterministic Stub)
+## 6. Running the Pipeline
+You can run the pipeline directly via the installed CLI:
 
+**Default schema run:**
 ```bash
-candidate-transformer \
-  --input sample_data/recruiter_export.csv \
-  --input sample_data/resume_jane_doe.pdf \
-  --out final_candidates.json \
-  --pretty \
-  --no-llm
+candidate-transformer --input sample_data/recruiter_export.csv --input sample_data/resume_jane_doe.pdf --out final_merged_profile.json --pretty
 ```
 
-### Custom Output View
-
-The projection layer allows you to reshape the JSON without changing Python code.
-
+**Custom config run (if custom config is provided):**
 ```bash
-candidate-transformer \
-  --input sample_data/recruiter_export.csv \
-  --input sample_data/resume_jane_doe.pdf \
-  --config configs/custom_recruiter_view.json \
-  --pretty \
-  --no-llm
+candidate-transformer --input sample_data/recruiter_export.csv --config configs/my_custom_config.json --out custom_output.json --pretty
 ```
 
-## Testing
+**CLI Flags:**
+- `--input`: Path to input files (can be repeated for multiple files).
+- `--config`: (Optional) Path to a custom output projection config JSON. If omitted, the default canonical schema is used.
+- `--out`: Output JSON file path.
+- `--no-llm`: Disables the LLM extraction path and uses a deterministic regex stub instead.
+- `--pretty`: Pretty-prints the resulting JSON output.
 
-The project maintains a strict deterministic test suite, including a "Gold Profile" end-to-end test that prevents regressions.
-
-```bash
-# Run all tests
-pytest -q
-
-# Run with coverage report
-pytest --cov=candidate_transformer --cov-report=term-missing
+## 7. Sample Output
+*Example of the default output (truncated):*
+```json
+[
+  {
+    "candidate_id": "c_b3122f55ed",
+    "full_name": "Praveen Kumar S",
+    "emails": [
+      "spraveenkumar2205@gmail.com"
+    ],
+    "phones": null,
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/spraveenkumar2205",
+      "github": "https://github.com/praveen-2205",
+      "portfolio": null,
+      "other": [
+        "https://scholar.google.com/citations?hl=en&user=WqhsL7cAAAAJ",
+        "https://github.com/praveen-2205/indic-voice-assistant"
+      ]
+    },
+    "headline": null,
+    "years_experience": 0.9,
+    "skills": [
+      {
+        "name": "python",
+        "confidence": 0.85,
+        "sources": [
+          "resume:test1.pdf"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Granville Tech",
+        "title": "Generative AI Intern",
+        "start": "2025-07",
+        "end": "2025-10",
+        "summary": "Built a multi-agent RAG system to automate professional proposal generation..."
+      }
+    ],
+    "overall_confidence": 0.61
+  }
+]
 ```
+*(Full file typically generated at the specified `--out` path).*
+
+## 8. Running Tests
+The suite contains robust edge-case validation and gold-profile end-to-end checks.
+```bash
+pytest tests/ -v
+```
+**Test Coverage Includes:**
+- **Ambiguous Matching:** Proving that candidates with the same name but different employment histories are not incorrectly merged.
+- **Experience Conflicts:** Ensuring overlapping roles at the same company resolve correctly using source priority.
+- **Malformed Data:** Normalizing broken phone formats or dropping them if country codes cannot be deterministically inferred.
+
+## 9. Assumptions & Descoped Items
+**Assumptions:**
+- Phone numbers without explicit country codes are assumed to be un-normalizable and are dropped rather than having country codes guessed.
+- E.164 normalization logic has been primarily validated against standard lengths (e.g. US/IN formats).
+- Overlapping employment dates at the identical normalized company name are treated as conflicting reports of the same job rather than two separate concurrent jobs.
+
+**Descoped Items (Under Time Pressure):**
+- **ATS JSON / LinkedIn / GitHub:** Excluded in favor of prioritizing the core merge, normalization, and provenance engine against CSVs and Resumes.
+- **Web UI:** Excluded; a clean, deterministic CLI is provided instead.
+
+## 10. Demo Video
+[Demo video (~2 min)](#) *(TODO: Insert link here)*
