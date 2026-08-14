@@ -29,11 +29,22 @@ def test_invalid_values_become_null(tmp_path):
     assert profiles[0].phones == []
     assert profiles[0].emails == ["bp@x.com"]
 
-def test_no_identity_resume(tmp_path):
-    # Resume with no name, email, or phone, just skills
-    resume_file = tmp_path / "anon_resume.txt"
-    resume_file.write_text("Skills: ReactJS, python", encoding="utf-8")
+def test_no_identity_resume(tmp_path, monkeypatch):
+    # Mock pypdf so we don't need to generate a real PDF file for this test
+    class MockPage:
+        def extract_text(self): return "Skills: ReactJS, python"
+        def __contains__(self, key): return False
+    class MockReader:
+        pages = [MockPage()]
+        def __init__(self, *args, **kwargs): pass
+        
+    import pypdf
+    monkeypatch.setattr(pypdf, "PdfReader", MockReader)
     
+    resume_file = tmp_path / "anon_resume.pdf"
+    resume_file.write_text("dummy PDF content", encoding="utf-8")
+    
+    from candidate_transformer.pipeline import run
     profiles = run([str(resume_file)], use_llm=False)
     assert len(profiles) == 1
     

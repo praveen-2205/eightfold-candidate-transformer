@@ -1,0 +1,481 @@
+{
+  "candidate_id": "c_673a403310",
+  "full_name": "Anagha N",
+  "emails": [
+    "anagha.amrutham02@gmail.com"
+  ],
+  "phones": null,
+  "location": {
+    "city": null,
+    "region": null,
+    "country": null
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/anagha-n-110579227",
+    "github": "https://github.com/Anagha-N-19",
+    "portfolio": null,
+    "other": [
+      "https://github.com/Anagha-N-19/Web-Development",
+      "https://github.com/Anagha-N-19/Vaccination-website",
+      "https://github.com/Anagha-N-19/Online-Restaurant-SWIGGY-using-PHP",
+      "https://github.com/Anagha-N-19/Neural-network",
+      "https://github.com/Anagha-N-19/Fun-Projects",
+      "https://github.com/Anagha-N-19/Data-science-and-Machine-learning",
+      "https://github.com/Anagha-N-19/Breast-Cancer-Prediction-using-Perceptron"
+    ]
+  },
+  "headline": null,
+  "years_experience": 2.6,
+  "skills": [
+    {
+      "name": "scikit-learn",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "pandas",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Tkinter",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Smtplib",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Seaborn",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Requests",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Pig-Latin",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "NumPy",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Node Js",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Nltk",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Mysql",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Matplotlib",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Linux Commands",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Keras",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Jquery",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Java",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Html",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Hive",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Google Cloud Platform",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Git",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Express",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Css",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "C++",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "C",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Big Data Analytics Tools",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    },
+    {
+      "name": "Beautifulsoup",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test4.pdf"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Hewlett Packard Enterprise (HPE)",
+      "title": "Intern",
+      "start": "2024-02",
+      "end": "present",
+      "summary": "Part of the High Performance Computing (HPC) team working on the Adaptive Robot Suite project(automation of test cases using Robot Framework considering firmware, software, driver versions of the IO Card - running python scripts in Jenkins for HPE Compute Scale-up Server 3200 protos)."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Indian Institute of Information Technology Kottayam",
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science Engineering",
+      "end_year": 2024
+    }
+  ],
+  "overall_confidence": 0.53685,
+  "provenance": [
+    {
+      "field": "education",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "emails",
+      "source": "resume:test4.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "full_name",
+      "source": "resume:test4.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.github",
+      "source": "resume:test4.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.linkedin",
+      "source": "resume:test4.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test4.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test4.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test4.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test4.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test4.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test4.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test4.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test4.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "years_experience",
+      "source": "system",
+      "method": "derived:from_experience_dates"
+    }
+  ]
+}

@@ -1,84 +1,83 @@
 import re
 import phonenumbers
 from candidate_transformer.models import FieldValue
-from candidate_transformer.normalize import normalize_email, to_e164, classify_url
+from candidate_transformer.normalize import to_e164, normalize_email
 
-# Standard regex patterns
-EMAIL_REGEX = re.compile(r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+")
-URL_REGEX = re.compile(r"(?:https?://)?(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*)")
-
-def extract_contacts(text: str, source_id: str) -> list[FieldValue]:
-    if not text or not isinstance(text, str):
+def extract_contacts(text: str | None, source_id: str) -> list[FieldValue]:
+    if not text:
         return []
         
     fields = []
     
-    # 1. Name Heuristic: Look at the first few lines for a valid name
-    # Criteria: 1-4 tokens, alpha characters and spaces only, no digits/emails
-    for line in text.split("\n")[:10]:
-        clean_line = line.strip()
-        if not clean_line:
-            continue
-            
-        # Reject if contains digits or @
-        if any(char.isdigit() or char == '@' for char in clean_line):
-            continue
-            
-        tokens = clean_line.split()
-        if 1 <= len(tokens) <= 4:
-            # Check if tokens are primarily alphabetic
-            if all(re.match(r"^[A-Za-z\.\-]+$", t) for t in tokens):
-                fields.append(FieldValue(
-                    field="full_name",
-                    value=clean_line,
-                    source=source_id,
-                    method="resume_regex",
-                    raw=clean_line,
-                    extraction_confidence=0.80  # Lower than CSV's 0.9
-                ))
-                break # Only take the first matching line as the name
-                
-    # 2. Emails
-    for match in EMAIL_REGEX.finditer(text):
+    # 0. Name (Basic heuristic: first non-empty line)
+    lines = [line.strip() for line in text.split('\n') if line.strip()]
+    if lines:
+        name = lines[0]
+        if len(name) < 50 and not any(char.isdigit() for char in name):  # Sanity check to avoid grabbing a whole paragraph
+            fields.append(FieldValue(
+                field="full_name", value=name, 
+                source=source_id, method="resume_regex", 
+                raw=name, extraction_confidence=0.80
+            ))
+    
+    # 1. Emails
+    email_pattern = r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+'
+    found_emails = set()
+    for match in re.finditer(email_pattern, text):
         raw_email = match.group(0)
         norm_email = normalize_email(raw_email)
-        if norm_email:
+        if norm_email and norm_email not in found_emails:
+            found_emails.add(norm_email)
             fields.append(FieldValue(
-                field="emails",
-                value=norm_email,
-                source=source_id,
-                method="resume_regex",
-                raw=raw_email,
-                extraction_confidence=0.85
+                field="emails", value=norm_email, 
+                source=source_id, method="resume_regex", 
+                raw=raw_email, extraction_confidence=0.95
             ))
-            
-    # 3. Phones (using phonenumbers Matcher for robustness)
-    for phone_match in phonenumbers.PhoneNumberMatcher(text, "US"):
+
+    # 2. Phones (Strict: Do not guess country code)
+    for phone_match in phonenumbers.PhoneNumberMatcher(text, None):
         raw_phone = phone_match.raw_string
         norm_phone = to_e164(raw_phone)
         if norm_phone:
             fields.append(FieldValue(
-                field="phones",
-                value=norm_phone,
-                source=source_id,
-                method="normalized:E164",
-                raw=raw_phone,
-                extraction_confidence=0.85
+                field="phones", value=norm_phone, 
+                source=source_id, method="normalized:E164", 
+                raw=raw_phone, extraction_confidence=0.90
             ))
+
+    # 3. URLs (Visible in text)
+    url_pattern = r'(https?://[^\s]+|www\.[^\s]+|[a-zA-Z0-9-]+\.(com|org|net|io|me|dev)[^\s]*)'
+    for match in re.finditer(url_pattern, text):
+        raw_url = match.group(0).rstrip('.,;)')
+        
+        # EXPLICITLY PREVENT EMAILS FROM BEING PARSED AS URLS
+        if '@' in raw_url:
+            continue
             
-    # 4. URLs (LinkedIn, GitHub, Portfolio)
-    for match in URL_REGEX.finditer(text):
-        raw_url = match.group(0)
-        url_tuple = classify_url(raw_url)
-        if url_tuple:
-            kind, norm_url = url_tuple
-            fields.append(FieldValue(
-                field=f"links.{kind}",
-                value=norm_url,
-                source=source_id,
-                method="resume_regex",
-                raw=raw_url,
-                extraction_confidence=0.85
-            ))
+        url_lower = raw_url.lower()
+        
+        # Explicitly reject common email domains from being treated as bare URLs
+        if url_lower in ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com"]:
+            continue
             
+        if "linkedin.com" in url_lower:
+            field_name = "links.linkedin"
+        elif "github.com" in url_lower:
+            # Distinguish between profile (1 slash) and repo (multiple slashes)
+            path = url_lower.split("github.com/")[-1].strip("/")
+            if "/" in path:
+                field_name = "links.other"
+            else:
+                field_name = "links.github"
+        elif "scholar.google.com" in url_lower:
+            field_name = "links.other"
+        else:
+            field_name = "links.portfolio"
+            
+        fields.append(FieldValue(
+            field=field_name, value=raw_url, 
+            source=source_id, method="resume_regex", 
+            raw=raw_url, extraction_confidence=0.85
+        ))
+        
     return fields

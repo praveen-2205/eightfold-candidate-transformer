@@ -1,0 +1,450 @@
+{
+  "candidate_id": "c_4d46239f2f",
+  "full_name": "BHANU REDDY CHOLAPALLI",
+  "emails": [
+    "rbhanu504@gmail.com"
+  ],
+  "phones": null,
+  "location": {
+    "city": null,
+    "region": null,
+    "country": null
+  },
+  "links": {
+    "linkedin": "linkedinlinkedin.com/in/bhanu-reddy1973",
+    "github": "https://github.com/bhanreddy1973",
+    "portfolio": null,
+    "other": []
+  },
+  "headline": null,
+  "years_experience": 2.8,
+  "skills": [
+    {
+      "name": "Vue.Js",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Vs Code",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "TensorFlow",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "SQL",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Reactnative",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Passport.Js",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Ocr",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Node.Js",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "NLP",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Mongodb",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Mern",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Mean",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Jupyter Notebook",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Java",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Html/Css",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Google Cloud Platform",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Flutter",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Figma",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Express.Js",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Django",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "C/C++",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "App Development",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Apollo Graphql",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    },
+    {
+      "name": "Angular.Js",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test7.pdf"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Google Developer Student Club (GDSC) IIIT Kottayam",
+      "title": "Member",
+      "start": "2023-11",
+      "end": "present",
+      "summary": null
+    },
+    {
+      "company": "BetaLabs IIIT Kottayam Internet of Things and Clouds Club",
+      "title": "Sub-Lead",
+      "start": "2023-11",
+      "end": "2024-09",
+      "summary": null
+    }
+  ],
+  "education": [
+    {
+      "institution": "Indian Institute Of Information Technology Kottayam",
+      "degree": "Bachelor of Technology in Computer Science and Engineering",
+      "field": "Artificial Intelligence And Data Science",
+      "end_year": 2026
+    }
+  ],
+  "overall_confidence": 0.52785,
+  "provenance": [
+    {
+      "field": "education",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "emails",
+      "source": "resume:test7.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "full_name",
+      "source": "resume:test7.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.github",
+      "source": "resume:test7.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.linkedin",
+      "source": "resume:test7.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test7.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "years_experience",
+      "source": "system",
+      "method": "derived:from_experience_dates"
+    }
+  ]
+}

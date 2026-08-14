@@ -1,0 +1,593 @@
+{
+  "candidate_id": "c_9af9a3c63d",
+  "full_name": "SUBODH UNIYAL",
+  "emails": [
+    "s.subodh7976@gmail.com"
+  ],
+  "phones": [
+    "+917976308872"
+  ],
+  "location": {
+    "city": null,
+    "region": null,
+    "country": null
+  },
+  "links": {
+    "linkedin": "https://linkedin.com/in/subodh7300",
+    "github": "https://github.com/Subodh7976",
+    "portfolio": "gmail.com/",
+    "other": [
+      "https://github.com/Subodh7976/The-Wise-Saint",
+      "https://github.com/Subodh7976/Sentify",
+      "https://github.com/AI-DS-Club-BetaLabs/careerbot/tree/rag/subodh"
+    ]
+  },
+  "headline": "AI/ML Enthusiast with expertise in Machine Learning, Natural Language Processing, and Deep Learning",
+  "years_experience": 3.2,
+  "skills": [
+    {
+      "name": "scikit-learn",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "pandas",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "TensorFlow",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Team Management",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Seaborn",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "SQL",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Rest Api",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Research",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "PyTorch",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Problem Solving",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Powerbi",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Postgresql",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "OpenCV",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "NumPy",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Natural Language Processing",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Mysql",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Mongodb",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Matplotlib",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Llamaindex",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Linux",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "LangChain",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Keras",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Huggingface",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Html/Css",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Git",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Flask",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Firestore",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Docker",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Django",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Data Analysis",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "Communication",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "C++",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    },
+    {
+      "name": "AWS",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test3.pdf"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "capSwipe",
+      "title": "Machine Learning (LLM) Intern",
+      "start": "2023-12",
+      "end": "present",
+      "summary": "Conducted research on State-of-the-art Text-to-SQL models and techniques, implemented Pipelines for utilizing LLMs for NL-to-SQL tasks, experimented with over 10+ LLMs, integrated and prompt engineered LLMs for advanced Information retrieval and Generation system, resulting in up to a 10% performance boost."
+    },
+    {
+      "company": "IIIT Kottayam",
+      "title": "Research Intern",
+      "start": "2023-06",
+      "end": "present",
+      "summary": "Presented comprehensive findings, methodology, and implemented machine learning algorithms for research papers and over 10 assignments, extending the research over Text, Image and Multi-modality, utilized advanced techniques like SHAP, LIME, Anchor, and IG values to enhance AI model explainability, resulting in a 20% decrease in misclassifications and increased transparency."
+    },
+    {
+      "company": "House of couton private limited",
+      "title": "Subject Matter Expert - AI/ML",
+      "start": "2023-09",
+      "end": "2023-11",
+      "summary": "Generated comprehensive reports on AI/ML findings to facilitate decision-making, conducted daily AI/ML research, including coding and evaluation for publication based on peer-reviewed papers."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Shri Digamber Jain Sr. Sec. School, Sikar, Rajasthan",
+      "degree": "Higher Secondary Education",
+      "field": null,
+      "end_year": 2020
+    },
+    {
+      "institution": "Indian Institute of Information Technology Kottayam (IIITK)",
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science",
+      "end_year": 2025
+    }
+  ],
+  "overall_confidence": 0.65835,
+  "provenance": [
+    {
+      "field": "education",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "education",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "emails",
+      "source": "resume:test3.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "full_name",
+      "source": "resume:test3.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "headline",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "links.github",
+      "source": "resume:test3.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.linkedin",
+      "source": "resume:test3.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test3.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test3.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test3.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.portfolio",
+      "source": "resume:test3.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "phones",
+      "source": "resume:test3.pdf",
+      "method": "normalized:E164"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test3.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "years_experience",
+      "source": "system",
+      "method": "derived:from_experience_dates"
+    }
+  ]
+}

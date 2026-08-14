@@ -1,0 +1,727 @@
+{
+  "candidate_id": "c_bb8cadbd8a",
+  "full_name": "Harsh Vardhan Singh Chauhan",
+  "emails": [
+    "harsh.thunder.happy@gmail.com"
+  ],
+  "phones": null,
+  "location": {
+    "city": null,
+    "region": null,
+    "country": null
+  },
+  "links": {
+    "linkedin": "linkedinlinkedin.com/in/harshvschauhan",
+    "github": "https://github.com/Harshtherocking",
+    "portfolio": null,
+    "other": [
+      "https://github.com/SIH-JusticeLeague/JusticeChatBot",
+      "https://github.com/Harshtherocking/retina-unet-segmentation",
+      "https://github.com/Harshtherocking/learn-cuda",
+      "https://github.com/Harshtherocking/gene-disease-graph"
+    ]
+  },
+  "headline": null,
+  "years_experience": 0.2,
+  "skills": [
+    {
+      "name": "spaCy",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "scikit-learn",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "pandas",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Transformer",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "TensorFlow",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Streamlit",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Seaborn",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "SQL",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Robotics",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Pygeometric",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "PyTorch",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Probability & Statistics",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Parallel & Distributed Computing",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Optimization For Ai/Ml",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Opennlp",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "OpenCV",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "NumPy",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Nltk",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Networkx",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Mongodb",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Mlflow",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Matplotlib",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Matlab",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Llamaindex",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Linear Algebra & Calculus",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "LangChain",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Keras",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Java",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Imagej",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Hugging Face",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Html",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Graph4Nlp",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Graph Machine Learning",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Git",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Federated Learning",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Fasttext",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "FastAPI",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Envi",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Dynamic & Temporal Graphs",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Docker",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Dgl",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Cuda",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Css",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Computer Network",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Cmake",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Cloud Computing",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "C/C++",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Bash",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    },
+    {
+      "name": "Apache-Spark",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test6.pdf"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "ScimerTech",
+      "title": "Data Miner",
+      "start": "2023-12",
+      "end": "2024-01",
+      "summary": "- Automated NIST web-book data scraping, boosting collection efficiency by 85% with advanced extraction techniques.\n- Improved spectroscopic analysis accuracy by 72% through noise reduction, smoothing, and feature extraction using 1-D Convolution and Random Forest."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Indian Institute of Information Technology (IIIT) Kottayam",
+      "degree": "BTech",
+      "field": "Computer Science - AI/DS",
+      "end_year": null
+    }
+  ],
+  "overall_confidence": 0.53685,
+  "provenance": [
+    {
+      "field": "education",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "emails",
+      "source": "resume:test6.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "full_name",
+      "source": "resume:test6.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.github",
+      "source": "resume:test6.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.linkedin",
+      "source": "resume:test6.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test6.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test6.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test6.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test6.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test6.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "years_experience",
+      "source": "system",
+      "method": "derived:from_experience_dates"
+    }
+  ]
+}

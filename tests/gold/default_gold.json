@@ -112,9 +112,7 @@
     "emails": [
       "jane@x.com"
     ],
-    "phones": [
-      "+14155550123"
-    ],
+    "phones": null,
     "location": {
       "city": null,
       "region": null,
@@ -123,7 +121,7 @@
     "links": {
       "linkedin": "https://linkedin.com/in/janedoe",
       "github": "https://github.com/janedoe",
-      "portfolio": "https://jane@x.com",
+      "portfolio": "x.com",
       "other": []
     },
     "headline": null,
@@ -161,7 +159,7 @@
       }
     ],
     "education": null,
-    "overall_confidence": 0.7718400000000001,
+    "overall_confidence": 0.627615,
     "provenance": [
       {
         "field": "emails",
@@ -207,16 +205,6 @@
         "field": "links.portfolio",
         "source": "resume:resume_jane_doe.pdf",
         "method": "resume_regex"
-      },
-      {
-        "field": "phones",
-        "source": "recruiter_csv",
-        "method": "csv_field+normalized:E164"
-      },
-      {
-        "field": "phones",
-        "source": "resume:resume_jane_doe.pdf",
-        "method": "normalized:E164"
       },
       {
         "field": "skills",

@@ -5,7 +5,7 @@ def test_extract_contacts_happy():
     Jane Doe
     Software Engineer
     jane.doe@example.com
-    Call me: (415) 555-0123
+    Call me: +1 (415) 555-0123
     Code: https://github.com/janedoe
     """
     fields = extract_contacts(text, "resume:test.pdf")

@@ -82,10 +82,21 @@ def _post_process_llm_data(data: LLMOutput, source_id: str) -> list[FieldValue]:
         if not edu.institution and not edu.degree:
             continue
             
+        degree = edu.degree.strip() if edu.degree else None
+        field = edu.field.strip() if edu.field else None
+        
+        # Deterministic split for "Degree in Field"
+        if degree and not field and " in " in degree.lower():
+            import re as regex
+            parts = regex.split(r'\s+in\s+', degree, maxsplit=1, flags=regex.IGNORECASE)
+            if len(parts) == 2:
+                degree = parts[0].strip()
+                field = parts[1].strip()
+                
         norm_edu = {
             "institution": edu.institution.strip() if edu.institution else None,
-            "degree": edu.degree.strip() if edu.degree else None,
-            "field": edu.field.strip() if edu.field else None,
+            "degree": degree,
+            "field": field,
             "end_year": to_year(str(edu.end_year)) if edu.end_year else None
         }
         fields.append(FieldValue(
@@ -122,7 +133,7 @@ class LlmSemanticExtractor:
         self.cache_dir = os.path.join(os.getcwd(), "cache", "llm")
         os.makedirs(self.cache_dir, exist_ok=True)
         self.prompt_version = "v3"
-        self.model_id = "meta/llama-3.3-70b-instruct"
+        self.model_id = "meta/llama-3.1-70b-instruct"
         self.stub_fallback = StubSemanticExtractor()
         
         self.api_key = os.environ.get("NVIDIA_API_KEY")

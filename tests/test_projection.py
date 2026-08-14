@@ -13,7 +13,7 @@ def test_project_custom_config():
         candidate_id="c_123",
         full_name="Jane Doe",
         emails=["jane@x.com", "other@y.com"],
-        phones=["4155550123"],
+        phones=["+14155550123"],
         skills=[
             {"name": "reactjs", "confidence": 0.9, "sources": []},
             {"name": "python", "confidence": 0.9, "sources": []}

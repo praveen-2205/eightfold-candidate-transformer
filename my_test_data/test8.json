@@ -1,0 +1,337 @@
+{
+  "candidate_id": "c_a9a5703791",
+  "full_name": "T Kumar Harsh",
+  "emails": [
+    "harshtiwarilm10@gmail.com"
+  ],
+  "phones": [
+    "+917518652411"
+  ],
+  "location": {
+    "city": null,
+    "region": null,
+    "country": null
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/t-kumar-harsh-0b9011273/",
+    "github": "https://github.com/HarshCule10",
+    "portfolio": null,
+    "other": [
+      "https://github.com/HarshCule10/Genome_Data_Analysis_Platform.git",
+      "https://github.com/HarshCule10/Acadix.git"
+    ]
+  },
+  "headline": null,
+  "years_experience": 2.8,
+  "skills": [
+    {
+      "name": "Vs Code",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Tailwind Css",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Postman",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Postgresql",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Node.Js",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Mongodb",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Linux",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Git/Github",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Flutter",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Figma",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Express.Js",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Data Structures",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Dart",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Computer Networks",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "Canva",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    },
+    {
+      "name": "C++",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test8.pdf"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Denvak",
+      "title": "Flutter Developer",
+      "start": "2023-12",
+      "end": "present",
+      "summary": "\u2022 Appointment Scheduling: Intuitive interface for seamless patient bookings and management.\n\u2022 Doctor Management: Tools for administrators to manage doctor profiles, availability, and schedules.\n\u2022 Dynamic Dashboard: Real-time metrics highlighting appointments and patient progress.\n\u2022 Diagnosis/Treatment Module: A workflow enabling doctors to complete patient diagnoses and treatment plans in under 10 minutes, boosting efficiency."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Lal Bahadur Shastri School,Kota",
+      "degree": "Intermediate",
+      "field": null,
+      "end_year": 2023
+    },
+    {
+      "institution": "Indian Institute of Information Technology, Kottayam",
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science and Engineering",
+      "end_year": 2027
+    }
+  ],
+  "overall_confidence": 0.6493500000000001,
+  "provenance": [
+    {
+      "field": "education",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "education",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "emails",
+      "source": "resume:test8.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "full_name",
+      "source": "resume:test8.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.github",
+      "source": "resume:test8.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.linkedin",
+      "source": "resume:test8.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test8.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test8.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "phones",
+      "source": "resume:test8.pdf",
+      "method": "normalized:E164"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test8.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "years_experience",
+      "source": "system",
+      "method": "derived:from_experience_dates"
+    }
+  ]
+}

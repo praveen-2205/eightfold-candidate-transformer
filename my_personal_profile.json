@@ -1,0 +1,432 @@
+{
+  "candidate_id": "c_683d18d648",
+  "full_name": "Ishaan Mahesh",
+  "emails": [
+    "nikhil9302@gmail.com",
+    "ishaanmahesh9315@gmail.com"
+  ],
+  "phones": null,
+  "location": {
+    "city": null,
+    "region": null,
+    "country": null
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/ishaan-mahesh/",
+    "github": "https://github.com/ishaan5199",
+    "portfolio": "https://partners-in-crime.vercel.app/main",
+    "other": [
+      "https://github.com/ishaan5199/steam-boy",
+      "https://github.com/ishaan5199/bigsy-frontend",
+      "https://github.com/ishaan5199/SIH-Backend"
+    ]
+  },
+  "headline": null,
+  "years_experience": 0.5,
+  "skills": [
+    {
+      "name": "Vercel",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Ssh",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "SQL",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Nodejs",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Nextjs",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Mysql",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Mongodb",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "LangChain",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Java",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Heroku",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Git",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Gcp",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Firestore",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Firebase",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "FastAPI",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Expressjs",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Elasticsearch",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Django",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "Cloud Databases",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "C/C++",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    },
+    {
+      "name": "AWS",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test11.pdf"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Madhya Pradesh State Police Department - Intelligence Branch",
+      "title": "Software Development",
+      "start": "2023-06",
+      "end": "2023-07",
+      "summary": "Multi Source Data Analysis Application: Developed a fully offline and secure data analysis and search engine application for the Police Department. Features: Search functionality, Text extraction from textual documents, Image OCR and Audio Transcription."
+    },
+    {
+      "company": "Fotomaker Gurugram",
+      "title": "Frontend Developer Intern",
+      "start": "2023-05",
+      "end": "2023-06",
+      "summary": "Website: Developed the startup\u2019s Web-Based Image Generation application, contributed towards designing and implementing user interfaces that provide an intuitive and seamless experiences for users."
+    },
+    {
+      "company": "Beem Bengaluru",
+      "title": "Data Engineer Intern",
+      "start": "2023-08",
+      "end": "2023-10",
+      "summary": "LLM based Chat Integration in Beem mobile app: Involved in developing a chat feature for the application using Python Langchain and Chainlit"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Indian Institute of Information Technology, Kottayam (IIITK)",
+      "degree": "Bachelor of Technology - Computer Science Engineering",
+      "field": null,
+      "end_year": 2024
+    }
+  ],
+  "overall_confidence": 0.52785,
+  "provenance": [
+    {
+      "field": "education",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "emails",
+      "source": "resume:test11.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "emails",
+      "source": "resume:test11.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "full_name",
+      "source": "resume:test11.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.github",
+      "source": "resume:test11.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.linkedin",
+      "source": "resume:test11.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test11.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test11.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test11.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.portfolio",
+      "source": "resume:test11.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test11.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "years_experience",
+      "source": "system",
+      "method": "derived:from_experience_dates"
+    }
+  ]
+}

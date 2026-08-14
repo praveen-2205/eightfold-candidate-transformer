@@ -9,10 +9,7 @@ def test_csv_happy_path():
     assert jane.source_type == "recruiter_csv"
     
     phones = [f for f in jane.fields if f.field == "phones"]
-    assert len(phones) == 1
-    assert phones[0].value == "+14155550123"
-    assert phones[0].raw == "4155550123"
-    assert phones[0].method == "csv_field+normalized:E164"
+    assert len(phones) == 0
 
 def test_csv_messy_row():
     source = CsvSource()

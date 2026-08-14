@@ -1,6 +1,8 @@
 import argparse
 import json
 import sys
+from dotenv import load_dotenv
+load_dotenv()
 from typing import Any
 from candidate_transformer import __version__
 from candidate_transformer.pipeline import run

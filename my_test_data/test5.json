@@ -1,0 +1,443 @@
+{
+  "candidate_id": "c_887ba6aedf",
+  "full_name": "Jayant Kolapkar",
+  "emails": [
+    "kolapkar21bcs132@iiitkottayam.ac.in"
+  ],
+  "phones": [
+    "+919422065902"
+  ],
+  "location": {
+    "city": null,
+    "region": null,
+    "country": null
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/jayant-kolapkar-967356254/",
+    "github": "https://github.com/Jayant-Kolapkar",
+    "portfolio": null,
+    "other": []
+  },
+  "headline": null,
+  "years_experience": 0.9,
+  "skills": [
+    {
+      "name": "scikit-learn",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Yolov8",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "TensorFlow",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Software Design",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "SQL",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "R",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Power Bi",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "OpenCV",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Linux",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Kubernetes",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Html/Css",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Google Cloud Platform",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Flask",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Docker",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Database Management",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Data Mining And Warehousing",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Cloud Computing",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "C++",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "C",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "Artificial Intelligence",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    },
+    {
+      "name": "AWS",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test5.pdf"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "YHills",
+      "title": "Data Analyst Intern",
+      "start": "2022-10",
+      "end": "2022-11",
+      "summary": "\u2022 Improved data quality by 25% by implementing robust data collection and cleaning processes using Excel and SQL \u2022 Accelerated decision-making processes by 20% through conducting detailed data analysis and creating predictive models using Python. \u2022 Enhanced stakeholder communication by developing interactive dashboards that reduced report generation time by 40%"
+    },
+    {
+      "company": "S R Electricals",
+      "title": "Data Science Intern",
+      "start": "2024-01",
+      "end": "2024-04",
+      "summary": "\u2022 Boosted inventory management efficiency by 15% by developing machine learning models for demand forecasting. \u2022 Increased marketing campaign effectiveness by 10% through executing A/B tests to evaluate business strategies. \u2022 Enhanced data accessibility by 30% by optimizing data collection and processing pipelines using Python and SQL"
+    },
+    {
+      "company": "Memento Media",
+      "title": "Artificial Intelligence Researcher",
+      "start": "2023-03",
+      "end": "2023-07",
+      "summary": "\u2022 Conducted in-depth research on cutting edge generative AI models like GPT 4.0, Claude Opus, Claude Sonnet, Palm 2, comparing and studying them extensively. \u2022 Developed and optimized chatbots using state-of-the-art AI technologies, enhancing user interaction. \u2022 Implemented API programming to integrate various AI platforms, improving system functionality"
+    }
+  ],
+  "education": [
+    {
+      "institution": "V.P\u2019s V.G. Bal Vikas Mandir",
+      "degree": "Indian School Certificate Examination",
+      "field": null,
+      "end_year": 2018
+    },
+    {
+      "institution": "Indian Institute of Information Technology Kottayam",
+      "degree": "Bachelor of Technology in Computer Science",
+      "field": "Computer Science",
+      "end_year": 2025
+    },
+    {
+      "institution": "Ashok Vidyalaya and Jr. College",
+      "degree": "Higher Secondary Certificate Examination",
+      "field": null,
+      "end_year": 2020
+    }
+  ],
+  "overall_confidence": 0.65835,
+  "provenance": [
+    {
+      "field": "education",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "education",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "education",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "emails",
+      "source": "resume:test5.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "full_name",
+      "source": "resume:test5.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.github",
+      "source": "resume:test5.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.linkedin",
+      "source": "resume:test5.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "phones",
+      "source": "resume:test5.pdf",
+      "method": "normalized:E164"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test5.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "years_experience",
+      "source": "system",
+      "method": "derived:from_experience_dates"
+    }
+  ]
+}

@@ -1,0 +1,486 @@
+{
+  "candidate_id": "c_dd95a3f837",
+  "full_name": "Akhil K",
+  "emails": [
+    "kssakhilraj@gmail.com"
+  ],
+  "phones": null,
+  "location": {
+    "city": null,
+    "region": null,
+    "country": null
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/akhil-k-a3506229a/",
+    "github": "https://github.com/E-m-i-n-e-n-c-e",
+    "portfolio": "https://www.udemy.com/certificate/UC-633cafb8-0e56-4de7-addd-26ec842e054d/",
+    "other": [
+      "https://github.com/ShaunAlanJoseph/Study-Tracker-Discord-Bot",
+      "https://github.com/ShaunAlanJoseph/Python-Project",
+      "https://github.com/E-m-i-n-e-n-c-e/Web-Chat-Using-Firebase.git",
+      "https://github.com/E-m-i-n-e-n-c-e/Ninja-Game-Using-Pygame",
+      "https://github.com/E-m-i-n-e-n-c-e/Gemini-Chat-Bot.git"
+    ]
+  },
+  "headline": null,
+  "years_experience": 1.9,
+  "skills": [
+    {
+      "name": "Web Scraping",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Typescript",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Tailwind Css",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "SQL",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Resnet",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Pygame",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Postgresql",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Node.Js",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Next.Js",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Mysql",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Mongodb",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Google Genai",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Git",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Gemini Api",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Game Development",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Flutter",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Firebase",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Figma",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Expressjs",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Discord.Py",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Dart",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Cursor",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Convolutional Neural Networks (Cnn)",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Codeforces Api",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Cloud Firestore",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    },
+    {
+      "name": "Angularjs",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test10.pdf"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Denvak LLP",
+      "title": "App Developer Intern",
+      "start": "2024-12",
+      "end": "present",
+      "summary": "\u2022 Developing a mobile application for dentists to streamline patient management\n\u2022 Implementing features for efficient record keeping and appointment management\n\u2022 Technologies: Flutter, Firebase, Digital Authentication, Data Analysis"
+    },
+    {
+      "company": "BetaLabs IIITKottayam",
+      "title": "App Development Sub Lead",
+      "start": "2024-10",
+      "end": "present",
+      "summary": "\u2022 Leading a team in developing an event management app for college club events\n\u2022 Managing full-stack development and cloud infrastructure\n\u2022 Technologies: Flutter, Firebase, Cloud Applications, Full-Stack Development"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Indian Institute of Information Technology Kottayam",
+      "degree": "B.Tech in Computer Science and Engineering",
+      "field": "AI and Data Science",
+      "end_year": 2023
+    }
+  ],
+  "overall_confidence": 0.52785,
+  "provenance": [
+    {
+      "field": "education",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "emails",
+      "source": "resume:test10.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "full_name",
+      "source": "resume:test10.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.github",
+      "source": "resume:test10.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.linkedin",
+      "source": "resume:test10.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test10.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test10.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test10.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test10.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.other",
+      "source": "resume:test10.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.portfolio",
+      "source": "resume:test10.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test10.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "years_experience",
+      "source": "system",
+      "method": "derived:from_experience_dates"
+    }
+  ]
+}

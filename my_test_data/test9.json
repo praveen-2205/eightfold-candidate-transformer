@@ -1,0 +1,317 @@
+{
+  "candidate_id": "c_5b3733fef3",
+  "full_name": "Nikhil Kumar",
+  "emails": [
+    "nikhil05122005@gmail.com"
+  ],
+  "phones": null,
+  "location": {
+    "city": null,
+    "region": null,
+    "country": null
+  },
+  "links": {
+    "linkedin": "linkedinlinkedin.com/in/sawarn-nik",
+    "github": "https://github.com/nikhil05122005",
+    "portfolio": null,
+    "other": []
+  },
+  "headline": null,
+  "years_experience": 2.0,
+  "skills": [
+    {
+      "name": "Team Management",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Sqlalchemy",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Solidity",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "React",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Python",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Problem Solving",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Mysql",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Leadership",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Javascript",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Java",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Html",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Flask",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Event Planning",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Css",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Communication",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "C++",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "C",
+      "confidence": 0.63,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    },
+    {
+      "name": "Angularjs",
+      "confidence": 0.54,
+      "sources": [
+        "resume:test9.pdf"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Trendles",
+      "title": "Sub Lead",
+      "start": "2024-09",
+      "end": "present",
+      "summary": "Organized 'Trashformers', an event focused on environmental sustainability and waste management. Led a team to plan and execute successful engagement activities."
+    },
+    {
+      "company": "BetaLabs",
+      "title": "Sub Lead",
+      "start": "2024-09",
+      "end": "present",
+      "summary": "Managed PR for several events organized by BetaLabs. Coordinated with different teams to ensure seamless execution of technical events."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Indian Institute of Information Technology Kottayam",
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science and Engineering",
+      "end_year": null
+    },
+    {
+      "institution": "Buddha Public School",
+      "degree": "Matriculation",
+      "field": null,
+      "end_year": 2021
+    }
+  ],
+  "overall_confidence": 0.52785,
+  "provenance": [
+    {
+      "field": "education",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "education",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "emails",
+      "source": "resume:test9.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "experience",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm"
+    },
+    {
+      "field": "full_name",
+      "source": "resume:test9.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.github",
+      "source": "resume:test9.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "links.linkedin",
+      "source": "resume:test9.pdf",
+      "method": "resume_regex"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "skills",
+      "source": "resume:test9.pdf",
+      "method": "resume_llm+normalized:canonical"
+    },
+    {
+      "field": "years_experience",
+      "source": "system",
+      "method": "derived:from_experience_dates"
+    }
+  ]
+}

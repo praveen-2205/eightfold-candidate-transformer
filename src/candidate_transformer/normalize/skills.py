@@ -1,47 +1,28 @@
-import json
-import os
-import re
-from rapidfuzz import process, fuzz
 
-# Load dictionary once at module level
-_DICT_PATH = os.path.join(os.path.dirname(__file__), "skills_dictionary.json")
-try:
-    with open(_DICT_PATH, "r", encoding="utf-8") as f:
-        _SKILL_MAP = json.load(f)
-except Exception:
-    _SKILL_MAP = {}
+SKILL_ALIASES = {
+        "tensorflow": "TensorFlow", "tf": "TensorFlow",
+    "react": "React", "reactjs": "React", "react.js": "React",
+    "kubernetes": "Kubernetes", "kubernets": "Kubernetes", "k8s": "Kubernetes",
+    "amazon web services": "AWS", "aws": "AWS",
+    "pytorch": "PyTorch", "opencv": "OpenCV",
+    "fastapi": "FastAPI", "langgraph": "LangGraph",
+    "langchain": "LangChain", "github": "GitHub",
+    "neo4j": "Neo4j", "sql": "SQL", "nlp": "NLP",
+    "spacy": "spaCy", "scipy": "SciPy", "numpy": "NumPy",
+    "pandas": "pandas", "scikit-learn": "scikit-learn",
+    "sklearn": "scikit-learn", "llm": "LLM", "llms": "LLMs",
+    "python": "Python", "java": "Java", "c++": "C++", "c": "C"
+}
 
-_KNOWN_CANONICAL = set(_SKILL_MAP.values())
-
-def canonical_skill(raw: str) -> str | None:
-    if not raw or not isinstance(raw, str):
+def canonical_skill(raw_skill: str) -> str | None:
+    if not raw_skill:
         return None
-        
-    cleaned = re.sub(r"\s+", " ", raw).strip()
-    if not cleaned:
-        return None
-        
-    query = cleaned.lower()
-    
-    # 1. Exact alias hit
-    if query in _SKILL_MAP:
-        return _SKILL_MAP[query]  # type: ignore
-        
-    # 2. Fuzzy match against canonicals
-    if _KNOWN_CANONICAL:
-        best_match = process.extractOne(
-            cleaned, 
-            list(_KNOWN_CANONICAL), 
-            scorer=fuzz.WRatio
-        )
-        if best_match and best_match[1] >= 92:
-            return best_match[0]  # type: ignore
-            
-    # 3. Fallback: preserve cleaned title-cased
-    return cleaned.title()
+    cleaned = raw_skill.strip().lower()
+    if cleaned in SKILL_ALIASES:
+        return SKILL_ALIASES[cleaned]
+    return raw_skill.strip().title()
 
-def is_known(raw: str) -> bool:
-    if not raw or not isinstance(raw, str):
+def is_known(raw_skill: str) -> bool:
+    if not raw_skill:
         return False
-    canon = canonical_skill(raw)
-    return canon in _KNOWN_CANONICAL
+    return raw_skill.strip().lower() in SKILL_ALIASES
