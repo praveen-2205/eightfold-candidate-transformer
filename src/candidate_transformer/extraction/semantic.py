@@ -1,9 +1,8 @@
 import json
 import hashlib
 import os
-import re
 from typing import Protocol
-from pydantic import BaseModel, ValidationError
+from pydantic import BaseModel
 
 from candidate_transformer.models import FieldValue
 from candidate_transformer.normalize import canonical_skill, is_known, to_year_month, to_year
@@ -53,7 +52,6 @@ def _post_process_llm_data(data: LLMOutput, source_id: str) -> list[FieldValue]:
             method="resume_llm", raw=data.headline, extraction_confidence=base_conf
         ))
 
-    # Normalize Skills
     for raw_skill in data.skills:
         canon = canonical_skill(raw_skill)
         if canon:
@@ -64,10 +62,9 @@ def _post_process_llm_data(data: LLMOutput, source_id: str) -> list[FieldValue]:
                 extraction_confidence=0.70 if known else base_conf
             ))
 
-    # Normalize Experience
     for exp in data.experience:
         if not exp.company and not exp.title:
-            continue  # Drop unsupported/empty records
+            continue
             
         norm_exp = {
             "company": exp.company.strip() if exp.company else None,
@@ -81,7 +78,6 @@ def _post_process_llm_data(data: LLMOutput, source_id: str) -> list[FieldValue]:
             method="resume_llm", raw=exp.model_dump(), extraction_confidence=base_conf
         ))
 
-    # Normalize Education
     for edu in data.education:
         if not edu.institution and not edu.degree:
             continue
@@ -100,20 +96,16 @@ def _post_process_llm_data(data: LLMOutput, source_id: str) -> list[FieldValue]:
     return fields
 
 # ---------------------------------------------------------
-# Stub Implementation (Deterministic, Offline)
+# Stub Implementation
 # ---------------------------------------------------------
 class StubSemanticExtractor:
     def extract(self, resume_text: str, source_id: str) -> list[FieldValue]:
-        # Extremely basic heuristics strictly to fulfill the tests deterministically
         data = LLMOutput()
-        
-        # Simple scan for known skills in the text
         if "ReactJS" in resume_text or "React" in resume_text:
             data.skills.append("React")
         if "python" in resume_text.lower():
             data.skills.append("Python")
             
-        # Hardcoded regex/heuristic for the Jane Doe sample
         if "Senior Engineer at Acme" in resume_text:
             data.experience.append(LLMExperience(
                 company="Acme", title="Senior Engineer",
@@ -129,9 +121,19 @@ class LlmSemanticExtractor:
     def __init__(self):
         self.cache_dir = os.path.join(os.getcwd(), "cache", "llm")
         os.makedirs(self.cache_dir, exist_ok=True)
-        self.prompt_version = "v1"
-        self.model_id = "generic-llm-1"
+        self.prompt_version = "v3"
+        self.model_id = "meta/llama-3.3-70b-instruct"
         self.stub_fallback = StubSemanticExtractor()
+        
+        self.api_key = os.environ.get("NVIDIA_API_KEY")
+        if self.api_key:
+            from openai import OpenAI
+            self.client = OpenAI(
+                base_url="https://integrate.api.nvidia.com/v1",
+                api_key=self.api_key
+            )
+        else:
+            self.client = None
 
     def _get_cache_key(self, text: str) -> str:
         content = f"{self.model_id}:{self.prompt_version}:{text}".encode('utf-8')
@@ -154,11 +156,78 @@ class LlmSemanticExtractor:
             except Exception as e:
                 logger.debug(f"Cache read failed for {cache_key}: {e}")
 
-        # 2. Simulate Network Call (Normally you'd use openai/gemini SDK here)
-        # For this implementation, if it reaches here and we don't have a real API configured,
-        # we log a warning and fall back to the stub.
-        logger.warning("Real LLM call attempted but no API configured. Falling back to Stub.")
-        return self.stub_fallback.extract(resume_text, source_id)
+        # 2. Check if API is configured
+        if not self.client:
+            logger.warning("NVIDIA_API_KEY not found in environment. Falling back to Stub.")
+            return self.stub_fallback.extract(resume_text, source_id)
+
+        # 3. Call NVIDIA NIM API
+        logger.info(f"Calling {self.model_id} via NVIDIA API for {source_id}...")
+        
+        system_prompt = """You are a highly precise candidate data extraction engine.
+Extract the professional data from the provided resume text into a strict JSON object.
+Do NOT wrap the output in markdown code blocks. Output RAW JSON only.
+
+Schema:
+{
+  "skills": ["array of strings (technical and soft skills)"],
+  "headline": "string or null (a short professional summary)",
+  "experience": [
+    {
+      "company": "string",
+      "title": "string",
+      "start": "string (YYYY-MM format) or null",
+      "end": "string (YYYY-MM or 'present') or null",
+      "summary": "string or null (brief bullet points)"
+    }
+  ],
+  "education": [
+    {
+      "institution": "string",
+      "degree": "string",
+      "field": "string or null",
+      "end_year": integer or null
+    }
+  ]
+}"""
+
+        try:
+            completion = self.client.chat.completions.create(
+                model=self.model_id,
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": f"Resume Text:\n\n{resume_text}"}
+                ],
+                temperature=0.1,  # Low temperature for deterministic extraction
+                top_p=0.7,
+                max_tokens=2048,
+                response_format={"type": "json_object"},
+                stream=False
+            )
+            
+            raw_content = completion.choices[0].message.content
+            
+            # Defensive cleaning just in case Llama outputs markdown formatting
+            raw_content = raw_content.strip()
+            if raw_content.startswith("```json"):
+                raw_content = raw_content[7:-3].strip()
+            elif raw_content.startswith("```"):
+                raw_content = raw_content[3:-3].strip()
+                
+            parsed_data = json.loads(raw_content)
+            
+            # Validate against our Pydantic schema
+            validated_data = LLMOutput.model_validate(parsed_data)
+            
+            # Save to Cache
+            with open(cache_path, "w", encoding="utf-8") as f:
+                json.dump(parsed_data, f)
+                
+            return _post_process_llm_data(validated_data, source_id)
+            
+        except Exception as e:
+            logger.error(f"NVIDIA API LLM extraction failed: {e}")
+            return self.stub_fallback.extract(resume_text, source_id)
 
 # ---------------------------------------------------------
 # Factory

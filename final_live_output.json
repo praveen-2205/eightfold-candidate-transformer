@@ -1,0 +1,291 @@
+[
+  {
+    "candidate_id": "c_38a23189f3",
+    "full_name": "Messy Person",
+    "emails": [
+      "messy@z.com"
+    ],
+    "phones": null,
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": null,
+    "experience": [
+      {
+        "company": "Gamma Inc",
+        "title": null,
+        "start": null,
+        "end": "present",
+        "summary": null
+      }
+    ],
+    "education": null,
+    "overall_confidence": 0.531,
+    "provenance": [
+      {
+        "field": "emails",
+        "source": "recruiter_csv",
+        "method": "csv_field+normalized:email"
+      },
+      {
+        "field": "experience",
+        "source": "recruiter_csv",
+        "method": "csv_field"
+      },
+      {
+        "field": "full_name",
+        "source": "recruiter_csv",
+        "method": "csv_field"
+      }
+    ]
+  },
+  {
+    "candidate_id": "c_c44f642530",
+    "full_name": "John Smith",
+    "emails": [
+      "john@y.com"
+    ],
+    "phones": [
+      "+12125559999"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": null,
+    "experience": [
+      {
+        "company": "Beta LLC",
+        "title": "Data Analyst",
+        "start": null,
+        "end": "present",
+        "summary": null
+      }
+    ],
+    "education": null,
+    "overall_confidence": 0.666,
+    "provenance": [
+      {
+        "field": "emails",
+        "source": "recruiter_csv",
+        "method": "csv_field+normalized:email"
+      },
+      {
+        "field": "experience",
+        "source": "recruiter_csv",
+        "method": "csv_field"
+      },
+      {
+        "field": "full_name",
+        "source": "recruiter_csv",
+        "method": "csv_field"
+      },
+      {
+        "field": "phones",
+        "source": "recruiter_csv",
+        "method": "csv_field+normalized:E164"
+      }
+    ]
+  },
+  {
+    "candidate_id": "c_c501984ac5",
+    "full_name": "Jane Doe",
+    "emails": [
+      "jane@x.com"
+    ],
+    "phones": [
+      "+14155550123"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/janedoe",
+      "github": "https://github.com/janedoe",
+      "portfolio": "https://jane@x.com",
+      "other": []
+    },
+    "headline": "Experienced software engineer specializing in scalable backend systems.",
+    "years_experience": 8.2,
+    "skills": [
+      {
+        "name": "React",
+        "confidence": 0.63,
+        "sources": [
+          "resume:resume_jane_doe.pdf"
+        ]
+      },
+      {
+        "name": "Python",
+        "confidence": 0.63,
+        "sources": [
+          "resume:resume_jane_doe.pdf"
+        ]
+      },
+      {
+        "name": "Kubernetes",
+        "confidence": 0.63,
+        "sources": [
+          "resume:resume_jane_doe.pdf"
+        ]
+      },
+      {
+        "name": "AWS",
+        "confidence": 0.63,
+        "sources": [
+          "resume:resume_jane_doe.pdf"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Acme Corp",
+        "title": "Software Engineer",
+        "start": null,
+        "end": "present",
+        "summary": null
+      },
+      {
+        "company": "TechCorp",
+        "title": "Software Engineer",
+        "start": "2018-06",
+        "end": "2020-12",
+        "summary": "Developed user interfaces using ReactJS."
+      },
+      {
+        "company": "Acme",
+        "title": "Senior Engineer",
+        "start": "2021-01",
+        "end": "present",
+        "summary": "Led backend development using Python and AWS."
+      }
+    ],
+    "education": [
+      {
+        "institution": "State University",
+        "degree": "B.S.",
+        "field": "Computer Science",
+        "end_year": 2018
+      }
+    ],
+    "overall_confidence": 0.8177400000000001,
+    "provenance": [
+      {
+        "field": "education",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_llm"
+      },
+      {
+        "field": "emails",
+        "source": "recruiter_csv",
+        "method": "csv_field+normalized:email"
+      },
+      {
+        "field": "emails",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_regex"
+      },
+      {
+        "field": "experience",
+        "source": "recruiter_csv",
+        "method": "csv_field"
+      },
+      {
+        "field": "experience",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_llm"
+      },
+      {
+        "field": "experience",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_llm"
+      },
+      {
+        "field": "full_name",
+        "source": "recruiter_csv",
+        "method": "csv_field"
+      },
+      {
+        "field": "full_name",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_regex"
+      },
+      {
+        "field": "headline",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_llm"
+      },
+      {
+        "field": "links.github",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_regex"
+      },
+      {
+        "field": "links.linkedin",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_regex"
+      },
+      {
+        "field": "links.portfolio",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_regex"
+      },
+      {
+        "field": "phones",
+        "source": "recruiter_csv",
+        "method": "csv_field+normalized:E164"
+      },
+      {
+        "field": "phones",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "normalized:E164"
+      },
+      {
+        "field": "skills",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_llm+normalized:canonical"
+      },
+      {
+        "field": "skills",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_llm+normalized:canonical"
+      },
+      {
+        "field": "skills",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_llm+normalized:canonical"
+      },
+      {
+        "field": "skills",
+        "source": "resume:resume_jane_doe.pdf",
+        "method": "resume_llm+normalized:canonical"
+      },
+      {
+        "field": "years_experience",
+        "source": "system",
+        "method": "derived:from_experience_dates"
+      }
+    ]
+  }
+]
