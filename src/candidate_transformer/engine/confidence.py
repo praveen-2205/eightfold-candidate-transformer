@@ -29,7 +29,10 @@ def _get_method_rel(method_str: str) -> float:
     return best
 
 def get_base_confidence(fv: FieldValue) -> float:
-    return _get_source_rel(fv.source) * _get_method_rel(fv.method)
+    method_rel = _get_method_rel(fv.method)
+    # If the extractor provided a specific confidence (not the default 0.5), use it.
+    base = fv.extraction_confidence if fv.extraction_confidence != 0.5 else method_rel
+    return _get_source_rel(fv.source) * base
 
 def calculate_confidence(winner: FieldValue, all_candidates: list[FieldValue], is_union: bool = False) -> float:
     def _val_key(v):

@@ -30,7 +30,7 @@ class CsvSource:
                                 raw=row["name"], extraction_confidence=0.9
                             ))
                             
-                        # 2. Emails (handle multiple if split by comma or semicolon)
+                        # 2. Emails
                         if row.get("email"):
                             raw_emails = [e.strip() for e in row["email"].replace(";", ",").split(",") if e.strip()]
                             for email in raw_emails:
@@ -53,18 +53,15 @@ class CsvSource:
                                     raw=raw_phone, extraction_confidence=0.9
                                 ))
                                 
-                        # 4. Experience Hints (Company & Title)
-                        if row.get("current_company"):
+                        # 4. Experience (Company & Title formatted directly for canonical merging)
+                        if row.get("current_company") or row.get("title"):
+                            company = row.get("current_company", "").strip() or None
+                            title = row.get("title", "").strip() or None
                             fields.append(FieldValue(
-                                field="current_company", value=row["current_company"].strip(),
+                                field="experience", 
+                                value={"company": company, "title": title, "start": None, "end": "present", "summary": None},
                                 source=self.source_type, method="csv_field",
-                                raw=row["current_company"], extraction_confidence=0.9
-                            ))
-                        if row.get("title"):
-                            fields.append(FieldValue(
-                                field="current_title", value=row["title"].strip(),
-                                source=self.source_type, method="csv_field",
-                                raw=row["title"], extraction_confidence=0.9
+                                raw={"current_company": company, "title": title}, extraction_confidence=0.9
                             ))
                             
                         records.append(SourceRecord(
